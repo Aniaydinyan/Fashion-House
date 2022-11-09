@@ -7,6 +7,68 @@ body {
 	margin: 0;
 }
 
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 10px;
+}
+
+.fashion-title {
+	font-size: 27px;
+	line-height: 100%;
+	color: black;
+}
+
+.fashion-title::before {
+	content: "";
+    width: 14px;
+    border: 1px solid #2945FF;
+    position: absolute;
+    bottom: 8px;
+}
+
+.nav-bar {
+	display: flex;
+	list-style-type: none;
+	padding: 12px 24px;
+	margin: 20px;
+}
+.nav-bar-item {
+	display: inline-block;
+}
+
+.nav-bar-item:first-child{
+	flex-grow: 1;
+}
+
+
+.nav-bar-item:hover {
+	width: 114px;
+	height: 43px;
+	background: #2945FF;
+	border-radius: 24px;
+
+}
+
+.nav-bar-link {
+	padding: 12px 24px;
+	color: black;
+	text-decoration: none;
+}
+
+.nav-links {
+	width: 86px;
+	height: 15px;
+	font-size: 16px;
+	line-height: 100%;
+	letter-spacing: -0.03em;
+	color: black;
+
+}
+
+
+
 .main {
 	display: flex;
 }
@@ -37,8 +99,7 @@ input[type=button] {
 .girl-img {
 	margin-top: 210px;
 	max-width: 100%;
-	width: 465px;
-	height: 611px;
+	width: 100%;
 }
 
 /*.design-img {
@@ -58,3 +119,85 @@ input[type=button] {
 }
 }
 
+.reviews-section {
+	overflow: auto;
+}
+
+.reviews-section::-webkit-scrollbar {
+	display: none;
+}
+
+.reviews-container{
+	display: flex;
+	margin: -15px;
+}
+
+.reviews {
+	width: 93px;
+	height: 32px;
+	font-size: 24px;
+	line-height: 32px;
+	letter-spacing: -0.03em;
+	color: #2945FF;
+}
+
+.reviews-title {
+	width: 408px;
+	height: 114px;
+	font-size: 51px;
+	line-height: 111%;
+	letter-spacing: -0.03em;
+	color: #000545;
+	margin-top: 26px;
+}
+
+.img-1 {
+	border-radius: 50%;
+	margin: calc(50% - );
+}
+
+.reviews-card {
+	width: 466px;
+	color: #DBB37866;
+	border-radius: 13px;
+	text-align: center;
+	margin: 15px;
+
+}
+
+.reviews-name {
+	width: 172px;
+	height: 38px;
+	font-size: 34px;
+	line-height: 41px;
+	text-align: center;
+	letter-spacing: -0.03em;
+	color: #000545;
+}
+
+.name-info {
+	width: 179px;
+	height: 19px;
+	font-size: 18px;
+	letter-spacing: -0.03em;
+	color: #2945FF;
+}
+
+.reviews-text {
+	width: 355px;
+	height: 140px;
+	font-weight: 300;
+	font-style: 14px;
+	text-align: center;
+	letter-spacing: -0.03em;
+	color: #393F4D;
+}
+
+.reviews-button {
+	justify-content: center;
+	width: 208px;
+	height: 56px;
+	background-color: #fff;
+	border: 1px solid #2945FF;
+	border-radius: 69.4639px;
+}
