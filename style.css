@@ -5,8 +5,10 @@
 body {
 	padding: 0;
 	margin: 0;
+	padding: 0 30px;
 }
 
+/*header*/
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -14,25 +16,30 @@ body {
 	padding: 30px 10px;
 }
 
-.fashion-title {
+.logo {
 	font-size: 27px;
 	line-height: 100%;
 	color: black;
 }
 
-.fashion-title::before {
+.logo::before {
 	content: "";
     width: 14px;
+	height: 14;
     border: 1px solid #2945FF;
     position: absolute;
-    bottom: 8px;
+    top: 79px;
+	left: 210px;
+	color: #2945FF;
 }
 
 .nav-bar {
 	display: flex;
+	flex-direction: row;
 	list-style-type: none;
-	padding: 12px 24px;
-	margin: 20px;
+	margin-top: 30px;
+	/*max-width: 600px;*/
+	width: 100%;
 }
 .nav-bar-item {
 	display: inline-block;
@@ -42,19 +49,24 @@ body {
 	flex-grow: 1;
 }
 
-
-.nav-bar-item:hover {
-	width: 114px;
-	height: 43px;
-	background: #2945FF;
-	border-radius: 24px;
-
+.nav-bar-link {
+	text-decoration: none;
+	padding: 14px;
+	align-items: flex-end;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 100%;
+	color: #000;
 }
 
-.nav-bar-link {
-	padding: 12px 24px;
-	color: black;
-	text-decoration: none;
+.nav-bar-link:hover{
+	background-color: #2945FF;
+	color: #FFF;
+	border-radius: 24px;
+	align-items: center;
+	padding: 14px 24px;
+	width: 114px;
+	height: 43px;
 }
 
 .nav-links {
@@ -67,14 +79,23 @@ body {
 
 }
 
-
-
+/*Fashion fits from the big brands.*/
 .main {
 	display: flex;
+	margin-bottom: 100px;
+}
+
+.container {
+	width: 426px;
+	height: 100%;
+	margin-bottom: 30px;
+}
+
+.container2 {
+	width: 710px;
 }
 
 .container-title {
-	margin-top: 210px;
 	color: #000545;
 	font-size: 68px;
 	line-height: 111%;
@@ -97,30 +118,19 @@ input[type=button] {
 
 
 .girl-img {
-	margin-top: 210px;
-	max-width: 100%;
-	width: 100%;
+	margin-left: 168px;
 }
-
-/*.design-img {
+.design-img {
 	width: 205px;
 	height: 124px;
 	z-index: 1;
-}*/
-
-@media(max-width: 860px) {
-	.girl-img {
-		width: 300px;
-		height: 390px;
-	}
-
-	.main {
-	display: none-flex;
 }
-}
+/*news-reel*/
+/*reviews-section*/
 
 .reviews-section {
 	overflow: auto;
+	padding: 0 30px;
 }
 
 .reviews-section::-webkit-scrollbar {
@@ -130,15 +140,6 @@ input[type=button] {
 .reviews-container{
 	display: flex;
 	margin: -15px;
-}
-
-.reviews {
-	width: 93px;
-	height: 32px;
-	font-size: 24px;
-	line-height: 32px;
-	letter-spacing: -0.03em;
-	color: #2945FF;
 }
 
 .reviews-title {
@@ -162,11 +163,10 @@ input[type=button] {
 	border-radius: 13px;
 	text-align: center;
 	margin: 15px;
-
 }
 
 .reviews-name {
-	width: 172px;
+	width: 100%;
 	height: 38px;
 	font-size: 34px;
 	line-height: 41px;
@@ -176,7 +176,7 @@ input[type=button] {
 }
 
 .name-info {
-	width: 179px;
+	width: 100%;
 	height: 19px;
 	font-size: 18px;
 	letter-spacing: -0.03em;
@@ -184,7 +184,7 @@ input[type=button] {
 }
 
 .reviews-text {
-	width: 355px;
+	width: 100%;
 	height: 140px;
 	font-weight: 300;
 	font-style: 14px;
@@ -196,8 +196,375 @@ input[type=button] {
 .reviews-button {
 	justify-content: center;
 	width: 208px;
-	height: 56px;
+	height: 55px;
 	background-color: #fff;
 	border: 1px solid #2945FF;
 	border-radius: 69.4639px;
+	background-color: #2945FF;
+	color: #fff;
+}
+
+/* Bags section */
+
+.learn-more {
+	color: #2945FF;
+	font-size: 16px;
+	line-height: 100%;
+	position: relative;
+}
+
+.learn-more::before {
+	content: "";
+	width: 20px;
+	border: 1px solid;
+	position: absolute;
+	left: 0;
+    bottom: -9px;
+}
+
+.section-label {
+	color: #2945FF;
+	width: 100%;
+	height: 32px;
+	font-size: 24px;
+	line-height: 32px;
+	letter-spacing: -0.03em;
+}
+
+.section-title {
+	color: #000545;
+	width: 100%;
+	height: 57px;
+	margin-top: -35px;
+	line-height: 111%;
+	letter-spacing: -0.03em;	
+}
+
+.bag-container {
+	width: 100%;
+	padding: 0 30px;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.bag-wrapper {
+	display: flex;
+}
+
+.bag {
+	padding: 30px 20px 60px 54px;
+	text-decoration: none;
+	margin-bottom: 48px;
+}
+
+.bag:hover {
+	background-color: #2945FF;
+	border-radius: 24px;
+	color: #fff;
+}
+
+.bag-title {
+	color: #000545;
+	font-size: 23px;
+	line-height: 111%;
+	letter-spacing: -0.03em;
+}
+
+.bag-info-text {
+	font-size: 14px;
+	line-height: 28px;
+	color: #393F4D;
+	font-weight: 400;
+}
+
+.bag:hover .learn-more,
+.bag:hover .bag-title, 
+.bag:hover .bag-info-text {
+	color: white;
+}
+
+/* 10/04/2021 */
+
+.begie-girl {
+	width: 400px;
+	height: 550px;
+	margin-top: 145px;
+	margin-left: 310px;
+}
+
+/*Image section 
+
+.image-container {
+	padding: 41px 23px 96px 23px;
+	position: relative;
+}
+
+.boy-image {
+	width: 100%;
+	margin-bottom: 0;
+	display: block;
+}
+
+.container-title .boy-cont {
+	position: absolute;
+	margin-top: 0;
+	font-family: Inter;
+	font-size: 37px;
+	font-weight: 600;
+	line-height: 41px;
+	letter-spacing: -0.03em;
+	text-align: left;
+	color: #FFFFFF;
+}
+
+.info-text .boy-cont {
+	position: absolute;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+
+.reviews-button .boy-cont {
+	position: absolute;
+	border: 1px solid #FFF;
+	border-radius: 60px;
+	width: 100%;
+	height: 40px;
+	background-color: #2945FF;
+	color: #FFF;
+	margin-top: 13px;
+}*/
+
+.boxes {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap:  15px;
+	margin: 0 auto;
+}
+.box {
+	width: 350px;
+	height: 220px;
+}
+
+.box-louis{
+	background-color: rgb(8, 8, 8);
+}
+
+}
+.hermes-img {
+	margin: -11px;
+}
+
+.adidas-img {
+    margin: 40px;
+    margin-left: 80px
+}
+
+.nike-img {
+	margin: 45px;
+	margin-left: 90px;
+}
+
+.gucci-img {
+	margin: 30px;
+	margin-left: 90px;
+}
+
+.chanel-img {
+	margin: 33px;
+	margin-left: 80px;
+}
+
+.louis-img {
+	margin: 40px;
+	margin-left: 110px;
+}
+
+.box:hover {
+	background: #2945FF;
+}
+
+/*Fashion news section*/
+
+.fashion-news-wrapper {
+	padding: 100px 23px 50px 23px;
+}
+
+.container-title {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	align-content: left;
+}
+
+.fashion-news-title{
+	font-weight: 600;
+	font-size: 34px;
+	line-height: 38px;
+	letter-spacing: -0.03em;
+	color: #000545;
+	max-width: 500px;
+	width: 100%;
+}
+
+.fashion-news-paragraph {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	letter-spacing: -0.03em;
+	color: #393F4D;
+	max-width: 500px;
+	width: 100%;
+}
+
+.fashion-news-image-container {
+	width: 100%;
+	max-width: 500px;
+	position: relative;
+	margin-top: 24px;
+	margin-left: 34px;
+
+}
+
+.fashion-news-img {
+	width: 100%;
+	max-width: 500px;
+}
+
+.fashion-news-line {
+	border: 1px solid #E2E2E2;
+	width: 100%;
+	max-width: 301px;
+	margin-top: 44px;
+}
+
+.fashion-news-second-title {
+	display: block;
+	width: 100%;
+	max-width: 224px;
+	margin-left: 116px;
+	margin-top: -45px;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 32px;
+	display: flex;
+	align-items: center;
+	letter-spacing: -0.03em;
+	color: #000000;
+}
+
+.fashion-news-second-paragraph {
+	width: 100%;
+	max-width: 224px;
+	margin-left: 116px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.03em;
+	color: #393F4D;
+}
+
+.second-line {
+	margin-left: 30px;
+}
+
+.expand-img {
+	margin-top:  30px;
+	margin-left: 37px;
+}
+
+@media (min-width:  726px) {
+
+	.container-title{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.fashion-news-title {
+		max-width: 568px;
+	}
+
+	.fashion-news-paragraph {
+		max-width: 720px;
+	}
+
+	.body-wrapper {
+		display: flex;
+		flex-direction: row;
+		margin-top: 87px;
+		margin-left: 153px;
+	} 
+
+	.info-container {
+		margin-left: 112px;
+	}
+
+	.fashion-news-line {
+		max-width: 438px;
+	}
+}
+
+/*Fashion news section END*/
+
+/*Numbers Section*/
+
+
+.contact-us-img {
+	height: 300px;
+	object-fit: cover;
+	object-position: left -29px;
+}
+
+.contact-form {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+
+
+@media (min-width: 768px) {
+	.form-row {
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		column-gap: 30px;
+	}
+}
+
+.input-control {
+	position: relative;
+}
+
+.input {
+	border: 2px solid #a3a9e4;
+	padding: 10px 20px;
+	border-radius: 8px;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.input:focus {
+	border-color: #2945FF;
+	outline: none;
+}
+
+.input:focus + .label {
+	color: #000545;
+	transform: translateY(-10px) scale(0.8);
+}
+
+
+.label {
+	position: absolute;
+	left: 20px;
+	transform: translateY(7px);
+	color: #bbb8b8;
+	background-color: #fff;
+	padding: 3px 5px;
 }
